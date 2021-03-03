@@ -1,0 +1,41 @@
+<html>
+ 
+<head>
+ 
+    <title>Netaccess Login Page</title>
+    <script>
+        function loginForm() {
+            document.myform.submit();
+            document.myform.action = "https://netaccess.iitm.ac.in/account/login";
+        }
+    </script>
+    
+    
+</head>
+ 
+<body onload="loginForm()">
+    <form action="https://netaccess.iitm.ac.in/account/login" name="myform" method="post">
+        <input type="text" name="userLogin" value="cs18s022">
+        <input type="password" name="userPassword" value="3>q3QdY~">
+        <input type="submit" value="Login">
+    </form>
+ 
+</body>
+
+<!-- Approve for 24 hours-- This part not working-->
+<script>
+    	function approveForm(){
+    		document.myfrm.submit();
+    		document.myfrm.action="https://netaccess.iitm.ac.in/account/approve";
+    	}
+ </script>
+<body onload="approveForm()">
+	<form action="https://netaccess.iitm.ac.in/account/approve" name="myfrm" method="post">
+		<input type="radio" name="duration" id="radios-0" value="1" >
+		<input type="radio" name="duration" id="radios-1" value="2" checked="checked">
+		<input type="submit" value="Authorize">
+	</form>
+
+</body>
+ 
+</html>
