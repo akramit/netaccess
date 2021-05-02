@@ -1,0 +1,25 @@
+<html>
+ 
+<head>
+ 
+    <title>Approve Page</title>
+    <script>
+        function approveForm(){
+            document.myform.submit();
+            document.myform.action="https://netaccess.iitm.ac.in/account/approve";
+            document.myform.submit();
+        }
+
+    </script>
+    
+</head>
+
+
+<body onload="approveForm()">
+    <form action="https://netaccess.iitm.ac.in/account/approve" name="myform" method="post">
+        <input name="duration" value="2">
+        <input name="approveBtn" value="">
+    </form>
+</body>
+ 
+</html>
